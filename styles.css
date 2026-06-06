@@ -129,6 +129,12 @@ a:hover { color: var(--accent-dark); }
 .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
 .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
 
+/* FAQ */
+.faq { margin: 8px auto 40px; }
+.faq h2 { text-align: center; font-size: 1.5rem; margin: 8px 0 4px; letter-spacing: -0.01em; }
+.faq h3 { font-size: 1.05rem; margin: 22px 0 4px; }
+.faq p { margin: 0; color: var(--muted); }
+
 /* Content pages */
 main.page { padding: 40px 0 64px; }
 main.page h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 4px; }
