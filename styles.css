@@ -49,13 +49,15 @@ a:hover { color: var(--accent-dark); }
   flex-wrap: wrap;
 }
 .brand {
-  font-weight: 700;
-  font-size: 1.1rem;
-  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: -0.01em;
 }
-.brand span { color: var(--accent); }
+.brand-banner {
+  display: block;
+  height: 72px;
+  width: auto;
+}
 .nav a {
   margin-left: 18px;
   text-decoration: none;
@@ -187,6 +189,7 @@ main.page li { margin: 4px 0; }
 }
 
 @media (max-width: 600px) {
+  .brand-banner { height: 48px; }
   .hero { padding: 44px 0 28px; }
   .hero h1 { font-size: 1.7rem; }
   .features { grid-template-columns: 1fr; }
