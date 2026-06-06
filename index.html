@@ -79,13 +79,20 @@
 
     <section class="wrap shots-section">
       <h2 class="section-title">A look inside</h2>
-      <div class="shots">
-        <img src="/assets/shots/phone-home.png" width="353" height="768" alt="Home screen on a phone" loading="lazy">
-        <img src="/assets/shots/placeholder-tracker.png" width="600" height="1280" alt="Stitch tracker — coming soon" loading="lazy">
-        <img src="/assets/shots/placeholder-stats.png" width="600" height="1280" alt="Progress and streaks — coming soon" loading="lazy">
-        <img src="/assets/shots/placeholder-legend.png" width="600" height="1280" alt="DMC color legend — coming soon" loading="lazy">
-        <img src="/assets/shots/placeholder-import.png" width="600" height="1280" alt="Import patterns — coming soon" loading="lazy">
-        <img src="/assets/shots/tablet-home.png" width="477" height="765" alt="Home screen on a tablet" loading="lazy">
+      <div class="carousel" data-carousel aria-roledescription="carousel" aria-label="App screenshots">
+        <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">&#8249;</button>
+        <div class="carousel-viewport">
+          <ul class="carousel-track">
+            <li class="slide"><img src="/assets/shots/tracker.png" width="688" height="1100" alt="Stitch tracker with mini-map, 82% complete" loading="lazy"><p class="cap">Track every stitch</p></li>
+            <li class="slide"><img src="/assets/shots/import.png" width="696" height="1100" alt="Import images, PDFs, backups, or create your own pattern" loading="lazy"><p class="cap">Import images, PDFs, backups — or create your own</p></li>
+            <li class="slide"><img src="/assets/shots/legend.png" width="688" height="1100" alt="Full DMC thread legend with colors and counts" loading="lazy"><p class="cap">Full DMC thread legend</p></li>
+            <li class="slide"><img src="/assets/shots/home-phone.png" width="353" height="768" alt="Home screen on a phone" loading="lazy"><p class="cap">Home — on your phone</p></li>
+            <li class="slide"><img src="/assets/shots/home-tablet.png" width="477" height="765" alt="Home screen on a tablet" loading="lazy"><p class="cap">Home — on your tablet</p></li>
+            <li class="slide"><img src="/assets/shots/stats-placeholder.png" width="600" height="1280" alt="Progress and streaks — screenshot coming soon" loading="lazy"><p class="cap">Progress &amp; streaks (coming soon)</p></li>
+          </ul>
+        </div>
+        <button class="carousel-btn next" type="button" aria-label="Next screenshot">&#8250;</button>
+        <div class="carousel-dots"></div>
       </div>
     </section>
 
@@ -116,5 +123,6 @@
       </nav>
     </div>
   </footer>
+  <script src="/site.js" defer></script>
 </body>
 </html>
