@@ -52,49 +52,39 @@ npx serve .
 
 ## Hosting layout
 
-This site lives in a **`flossworks-site/` subfolder of the private GitHub repo
-`DranakCorps-bot`** (the Cross-Stitch Android app source is NOT in that repo — it
-stays in its own local repo). Cloudflare Pages connects to `DranakCorps-bot` and
-is pointed at the `flossworks-site` subfolder.
+This site is a standalone repo published to GitHub as
+**`DranakCorps-bot/FlossworksMiniSite`** (the site files live at the repo root).
+The Cross-Stitch Android app is NOT here — it has its own repo
+(`DranakCorps-bot/FlossworksAndroidApp`, kept private). Cloudflare Pages
+connects to `FlossworksMiniSite` and serves it from the root.
 
 ## Deploy — Cloudflare Pages
 
-Day-to-day deploys are automatic: commit and push to the repo's default branch
-and Cloudflare rebuilds in ~1 minute.
+Day-to-day deploys are automatic: commit and push to `main` and Cloudflare
+rebuilds in ~1 minute.
 
 **Pages project settings:**
 - Framework preset: **None**
-- **Root directory (advanced): `flossworks-site`**
+- Root directory: **`/`** (repo root — the default)
 - Build command: *(leave blank)*
-- Build output directory: **`/`** (i.e. the root directory itself)
+- Build output directory: **`/`**
 
 ### First-time setup (dashboard)
-1. Make sure `flossworks-site/` is pushed to `DranakCorps-bot` (see below).
+1. Make sure this repo is pushed to `FlossworksMiniSite` (see below).
 2. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git**.
-3. Select the **`DranakCorps-bot`** repo. Set the build settings above
-   (especially **Root directory = `flossworks-site`**). **Save and Deploy.**
+3. Select the **`FlossworksMiniSite`** repo. Set the build settings above.
+   **Save and Deploy.**
 4. Confirm the temporary `*.pages.dev` URL loads.
 5. **Custom domains** → add `flossworkscross-stitch.com` and
    `www.flossworkscross-stitch.com`. Since DNS is already on Cloudflare,
    Pages will offer to create the records for you — approve them.
 
-### Getting the site into DranakCorps-bot
-The files currently live in their own local repo at
-`CrossStitchPatternStudio/website/`. To publish them into `DranakCorps-bot`:
+### Push to GitHub
+From this folder (`CrossStitchPatternStudio/website/`):
 
 ```powershell
-# Clone DranakCorps-bot somewhere OUTSIDE the cross-stitch project folder
-cd C:\Users\david\source
-git clone https://github.com/<OWNER>/DranakCorps-bot.git
-cd DranakCorps-bot
-
-# Copy the site in (the /XD .git flag skips the nested git repo)
-robocopy "C:\Users\david\source\CrossStitchPatternStudio\website" ".\flossworks-site" /E /XD .git
-
-# Commit & push
-git add flossworks-site
-git commit -m "Add Flossworks mini-site"
-git push
+git remote add origin https://github.com/DranakCorps-bot/FlossworksMiniSite.git
+git push -u origin main
 ```
 
 ## Notes / open items
