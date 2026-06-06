@@ -50,34 +50,51 @@ python -m http.server 8080
 npx serve .
 ```
 
+## Hosting layout
+
+This site lives in a **`flossworks-site/` subfolder of the private GitHub repo
+`DranakCorps-bot`** (the Cross-Stitch Android app source is NOT in that repo — it
+stays in its own local repo). Cloudflare Pages connects to `DranakCorps-bot` and
+is pointed at the `flossworks-site` subfolder.
+
 ## Deploy — Cloudflare Pages
 
-This site is hosted on **Cloudflare Pages**, connected to this Git repo.
-Day-to-day deploys are automatic: commit and push to the default branch and
-Cloudflare rebuilds in ~1 minute.
+Day-to-day deploys are automatic: commit and push to the repo's default branch
+and Cloudflare rebuilds in ~1 minute.
 
 **Pages project settings:**
 - Framework preset: **None**
+- **Root directory (advanced): `flossworks-site`**
 - Build command: *(leave blank)*
-- Build output directory: **`/`** (repo root)
+- Build output directory: **`/`** (i.e. the root directory itself)
 
 ### First-time setup (dashboard)
-1. Push this repo to GitHub (see below).
+1. Make sure `flossworks-site/` is pushed to `DranakCorps-bot` (see below).
 2. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git**.
-3. Select this repo. Set the build settings above. **Save and Deploy.**
+3. Select the **`DranakCorps-bot`** repo. Set the build settings above
+   (especially **Root directory = `flossworks-site`**). **Save and Deploy.**
 4. Confirm the temporary `*.pages.dev` URL loads.
 5. **Custom domains** → add `flossworkscross-stitch.com` and
    `www.flossworkscross-stitch.com`. Since DNS is already on Cloudflare,
    Pages will offer to create the records for you — approve them.
 
-### Push to GitHub
-```sh
-git init
-git add .
-git commit -m "Initial Flossworks website"
-git branch -M main
-git remote add origin git@github.com:<USERNAME>/flossworks-site.git
-git push -u origin main
+### Getting the site into DranakCorps-bot
+The files currently live in their own local repo at
+`CrossStitchPatternStudio/website/`. To publish them into `DranakCorps-bot`:
+
+```powershell
+# Clone DranakCorps-bot somewhere OUTSIDE the cross-stitch project folder
+cd C:\Users\david\source
+git clone https://github.com/<OWNER>/DranakCorps-bot.git
+cd DranakCorps-bot
+
+# Copy the site in (the /XD .git flag skips the nested git repo)
+robocopy "C:\Users\david\source\CrossStitchPatternStudio\website" ".\flossworks-site" /E /XD .git
+
+# Commit & push
+git add flossworks-site
+git commit -m "Add Flossworks mini-site"
+git push
 ```
 
 ## Notes / open items
