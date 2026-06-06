@@ -64,37 +64,30 @@
       </div>
     </section>
 
-    <section class="wrap showcase">
-      <h2 class="section-title">Create and track — on your phone or tablet</h2>
-      <img src="/assets/marketing/tablet-and-phone.jpg" width="1200" height="900"
-           alt="Flossworks running on a tablet and a phone, showing a project in progress" loading="lazy">
-    </section>
-
-    <section class="wrap infographics">
-      <img src="/assets/marketing/photo-to-pattern.jpg" width="1100" height="471"
-           alt="Turn any photo into a stitchable cross-stitch chart" loading="lazy">
-      <img src="/assets/marketing/create-track.jpg" width="900" height="900"
-           alt="Create a chart from your picture, then track your stitching progress and streaks" loading="lazy">
-    </section>
-
-    <section class="wrap shots-section">
+    <section class="wrap gallery-section">
       <h2 class="section-title">A look inside</h2>
-      <div class="carousel" data-carousel aria-roledescription="carousel" aria-label="App screenshots">
-        <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">&#8249;</button>
-        <div class="carousel-viewport">
-          <ul class="carousel-track">
-            <li class="slide"><img src="/assets/shots/tracker.png" width="688" height="1100" alt="Stitch tracker with mini-map, 82% complete" loading="lazy"><p class="cap">Track every stitch</p></li>
-            <li class="slide"><img src="/assets/shots/import.png" width="696" height="1100" alt="Import images, PDFs, backups, or create your own pattern" loading="lazy"><p class="cap">Import images, PDFs, backups — or create your own</p></li>
-            <li class="slide"><img src="/assets/shots/legend.png" width="688" height="1100" alt="Full DMC thread legend with colors and counts" loading="lazy"><p class="cap">Full DMC thread legend</p></li>
-            <li class="slide"><img src="/assets/shots/home-phone.png" width="353" height="768" alt="Home screen on a phone" loading="lazy"><p class="cap">Home — on your phone</p></li>
-            <li class="slide"><img src="/assets/shots/home-tablet.png" width="477" height="765" alt="Home screen on a tablet" loading="lazy"><p class="cap">Home — on your tablet</p></li>
-            <li class="slide"><img src="/assets/shots/stats-placeholder.png" width="600" height="1280" alt="Progress and streaks — screenshot coming soon" loading="lazy"><p class="cap">Progress &amp; streaks (coming soon)</p></li>
-          </ul>
-        </div>
-        <button class="carousel-btn next" type="button" aria-label="Next screenshot">&#8250;</button>
-        <div class="carousel-dots"></div>
-      </div>
+      <ul class="gallery">
+        <li><button class="gthumb" type="button" data-full="/assets/marketing/tablet-and-phone.jpg" data-cap="Create and track on phone or tablet"><img src="/assets/thumbs/tablet-and-phone.jpg" width="440" height="440" alt="Flossworks on a tablet and a phone" loading="lazy"></button></li>
+        <li><button class="gthumb" type="button" data-full="/assets/marketing/photo-to-pattern.jpg" data-cap="Turn any photo into a stitchable chart"><img src="/assets/thumbs/photo-to-pattern.jpg" width="440" height="440" alt="Photo to pattern" loading="lazy"></button></li>
+        <li><button class="gthumb" type="button" data-full="/assets/marketing/create-track.jpg" data-cap="Create your chart, then track every stitch"><img src="/assets/thumbs/create-track.jpg" width="440" height="440" alt="Create and track" loading="lazy"></button></li>
+        <li><button class="gthumb" type="button" data-full="/assets/shots/tracker.png" data-cap="Track every stitch — live mini-map and per-color progress"><img src="/assets/thumbs/tracker.jpg" width="440" height="440" alt="Stitch tracker" loading="lazy"></button></li>
+        <li><button class="gthumb" type="button" data-full="/assets/shots/import.png" data-cap="Import images, PDFs, backups — or create your own"><img src="/assets/thumbs/import.jpg" width="440" height="440" alt="Import options" loading="lazy"></button></li>
+        <li><button class="gthumb" type="button" data-full="/assets/shots/legend.png" data-cap="Full DMC thread legend"><img src="/assets/thumbs/legend.jpg" width="440" height="440" alt="DMC thread legend" loading="lazy"></button></li>
+        <li><button class="gthumb" type="button" data-full="/assets/shots/home-phone.png" data-cap="Home — on your phone"><img src="/assets/thumbs/home-phone.jpg" width="440" height="440" alt="Home on a phone" loading="lazy"></button></li>
+        <li><button class="gthumb" type="button" data-full="/assets/shots/home-tablet.png" data-cap="Home — on your tablet"><img src="/assets/thumbs/home-tablet.jpg" width="440" height="440" alt="Home on a tablet" loading="lazy"></button></li>
+        <li><button class="gthumb" type="button" data-full="/assets/shots/stats-placeholder.png" data-cap="Progress &amp; streaks (coming soon)"><img src="/assets/thumbs/stats-placeholder.jpg" width="440" height="440" alt="Progress and streaks coming soon" loading="lazy"></button></li>
+      </ul>
     </section>
+
+    <div class="lightbox" id="lightbox" hidden role="dialog" aria-label="Screenshot viewer">
+      <button class="lb-btn lb-close" type="button" aria-label="Close">&times;</button>
+      <button class="lb-btn lb-prev" type="button" aria-label="Previous">&#8249;</button>
+      <figure class="lb-figure">
+        <img class="lb-img" src="" alt="">
+        <figcaption class="lb-cap"></figcaption>
+      </figure>
+      <button class="lb-btn lb-next" type="button" aria-label="Next">&#8250;</button>
+    </div>
 
     <section class="wrap faq">
       <h2>Frequently asked questions</h2>
