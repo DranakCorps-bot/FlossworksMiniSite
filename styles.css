@@ -42,21 +42,11 @@ a:hover { color: var(--accent-dark); }
 .site-header .wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
   flex-wrap: wrap;
-}
-.brand {
-  display: inline-flex;
-  align-items: center;
-  text-decoration: none;
-}
-.brand-banner {
-  display: block;
-  height: 72px;
-  width: auto;
 }
 .nav a {
   margin-left: 18px;
@@ -189,7 +179,6 @@ main.page li { margin: 4px 0; }
 }
 
 @media (max-width: 600px) {
-  .brand-banner { height: 48px; }
   .hero { padding: 44px 0 28px; }
   .hero h1 { font-size: 1.7rem; }
   .features { grid-template-columns: 1fr; }
