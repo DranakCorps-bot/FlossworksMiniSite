@@ -69,7 +69,7 @@ a:hover { color: var(--accent-dark); }
 
 /* Hero */
 .hero {
-  padding: 56px 0 40px;
+  padding: 40px 0 40px;
   text-align: center;
 }
 .hero h1 {
@@ -225,7 +225,7 @@ main.page li { margin: 4px 0; }
 }
 
 @media (max-width: 600px) {
-  .hero { padding: 44px 0 28px; }
+  .hero { padding: 40px 0 28px; }
   .hero h1 { font-size: 1.7rem; }
   .features { grid-template-columns: 1fr; }
   .site-footer .wrap { flex-direction: column; gap: 8px; }
