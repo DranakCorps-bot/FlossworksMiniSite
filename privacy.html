@@ -13,18 +13,23 @@
   ============================================================================
   GOOGLE PLAY "DATA SAFETY" FORM — MAPPING & CHECKLIST
   ============================================================================
-  This policy describes an OFFLINE-FIRST app. The app's AndroidManifest.xml
-  declares NO permissions (no INTERNET permission), and the codebase contains
-  no analytics, crash-reporting, ads, or networking libraries. The Data Safety
-  answers below follow from that. Re-verify before each release.
+  This policy describes an OFFLINE-FIRST app. Core features (generate, edit,
+  import, track, export) need no network. As of the billing release the merged
+  manifest DOES include INTERNET + com.android.vending.BILLING + ACCESS_NETWORK_STATE
+  + BIND_GET_INSTALL_REFERRER_SERVICE — used ONLY for Google Play Billing (purchases)
+  and Play Install Referrer (trial start), both Google services, not ours. The
+  codebase has no analytics, crash-reporting, ads, or our-own-server networking.
+  The app collects/transmits NO personal data, so the Data Safety answers below
+  still hold. Re-verify before each release.
 
   Data collection / sharing:
-    - Data collected (sent off device)? ......... NO
+    - Data collected (sent off device)? ......... NO (no data WE collect; Play
+                                                  Billing data is Google's, see note*)
     - Data shared with third parties? ........... NO
-    - "Data collected" in Play's sense requires transmission off the device.
-      Because the app has no network access, nothing is "collected" or "shared."
+    - Play's "data collected" = transmission off device to YOU. Nothing the app
+      sends goes to us; purchases are handled by Google's own Billing service.
 
-  Per-type answers (all "Not collected" given no network access):
+  Per-type answers (all "Not collected" by us):
     - Location ................................... Not collected
     - Personal info (name, email, etc.) ......... Not collected
     - Financial info ............................ Not collected (see note*)
@@ -44,7 +49,7 @@
    this as data YOUR app collects. Confirm this still holds at release.
 
   ⚠️ CONFIRM-BEFORE-RELEASE CHECKLIST (flip the policy + this form if any change):
-    [ ] Still no INTERNET permission / no networking code?
+    [x] Network use limited to Play Billing + Install Referrer (Google services)?
     [ ] No analytics added (Firebase Analytics, etc.)?
     [ ] No crash reporting added (Crashlytics, etc.)?
     [ ] No ads SDK added (AdMob, etc.)?
@@ -68,15 +73,15 @@
       <img class="hero-banner" src="/assets/banner.png" width="1200" height="400"
            alt="Flossworks – Stitch &amp; Track: Design. Stitch. Track. Celebrate!">
       <h1>Privacy Policy</h1>
-      <p class="effective"><strong>Effective date:</strong> June 6, 2026</p>
+      <p class="effective"><strong>Effective date:</strong> June 8, 2026</p>
       <p class="lead">This Privacy Policy explains how <strong>Flossworks Cross-Stitch LLC</strong> ("we," "us," or "our") handles information in connection with the <strong>Flossworks – Stitch &amp; Track</strong> mobile application (the "App"). It applies to the App and to this website.</p>
 
       <div class="callout">
-        <strong>The short version:</strong> Flossworks – Stitch &amp; Track is designed to work entirely on your device. The App does not have permission to access the internet, and it does not collect, transmit, or share your personal information, images, or pattern data. Your projects stay on your device unless you choose to export or share them yourself.
+        <strong>The short version:</strong> Flossworks – Stitch &amp; Track is designed to work entirely on your device. The App uses the internet only to process optional in-app purchases through Google Play; it does not collect, transmit, or share your personal information, images, or pattern data. Your projects stay on your device unless you choose to export or share them yourself.
       </div>
 
       <h2>Information we collect</h2>
-      <p>We do <strong>not</strong> collect personal information through the App. The App runs offline and has no ability to send data from your device to us or to any third party. We do not operate servers that receive your data, and we do not use analytics or tracking tools inside the App.</p>
+      <p>We do <strong>not</strong> collect personal information through the App. All your patterns, photos, and progress stay on your device. The App does not send your data to us or to any third party — we do not operate servers that receive your data, and we do not use analytics, advertising, or tracking tools inside the App. The App's only use of the internet is Google Play Billing when you make an optional purchase, which is handled entirely by Google (see “Purchases” below).</p>
 
       <h2>Information you provide</h2>
       <p>You can enter content into the App — for example, naming a project, adjusting a pattern, or recording your stitching progress. This information is stored locally on your device. It is not sent to us.</p>
