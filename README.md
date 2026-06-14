@@ -88,7 +88,8 @@ git push -u origin main
 ```
 
 ## Notes / open items
-- No "Get it on Google Play" badge yet — add it to `index.html` only after the
-  Play listing is confirmed live.
+- Official "Get it on Google Play" badge is live in the landing hero (app published
+  2026-06-07), linking to `play.google.com/store/apps/details?id=com.caybin.crossstitchstudio`.
+  Badge artwork is Google's official asset, hosted unmodified at `assets/google-play-badge.png`.
 - Support email used throughout: `support@flossworkscross-stitch.com`.
 - Do not publish the company's physical address or a personal phone number.

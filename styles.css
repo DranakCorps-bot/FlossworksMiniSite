@@ -112,6 +112,11 @@ a:hover { color: var(--accent-dark); }
 .btn.secondary:hover { background: rgba(181, 72, 93, 0.08); color: var(--accent-dark); }
 .btn-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 
+/* Official Google Play badge (artwork unmodified per Google brand guidelines) */
+.store-cta { margin: 0 0 22px; text-align: center; }
+.play-badge { display: inline-block; }
+.play-badge img { height: 60px; width: auto; display: block; }
+
 /* Feature cards */
 .features {
   display: grid;
