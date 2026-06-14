@@ -1,27 +1,46 @@
 # Flossworks – Stitch & Track
 
-> An offline-first Android app for cross-stitch. Turn your photos into stitchable
-> patterns with real DMC thread colors, import existing chart PDFs, organize your
-> projects, and track every stitch. Free to install; a one-time purchase unlocks
-> creation/import/export — no subscription. Made by Flossworks Cross-Stitch LLC.
+> An offline-first Android app (phones + tablets) for cross-stitch. Create patterns
+> from your photos, import existing chart PDFs (including Pattern Keeper–style charts),
+> organize projects, and track every stitch to the finish. Free to download with a
+> 30-day trial; viewing and stitch-tracking are free forever; a one-time purchase
+> unlocks creating/importing/exporting. No subscription. Made by Flossworks
+> Cross-Stitch LLC.
 
-## What it does
-- Create cross-stitch patterns from your own photos and images using real DMC thread colors.
-- Import existing charts, including Pattern Keeper–style PDFs.
-- Organize all your projects in one place.
-- Track stitching progress: mark stitches, per-color counts, daily history, streaks, and finish estimates.
-- Export print-ready PDFs and a single-file ".flossworks" backup.
-- Works fully offline — no account, no sign-up; your data stays on your device.
+## Create
+- Turn any photo or image into a cross-stitch chart using real DMC thread colors, with automatic color reduction and anti-"confetti" cleanup.
+- Choose your Aida/fabric count (12–32 ct) and chart size before generating.
+- Draw your own pattern from a blank grid.
 
-## Who it's for
-- Cross-stitch hobbyists on Android phones and tablets.
-- Pattern sellers (an optional commercial/branding tier brands exported PDFs and listing images).
+## Import
+- Import chart PDFs, including Pattern Keeper–style charts, with the original symbols preserved.
+- Restore your stitched progress from a Pattern Keeper ".pk_progress" backup — pick up exactly where you left off.
+- Import/restore a ".flossworks" backup (a full project: chart + progress + history).
+
+## Edit
+- Adjust a generated chart or draw a custom one: paint, replace colors, set a border.
+- "Isolate" a color with a glowing halo to find stray stitches fast.
+
+## Track (free, forever)
+- Mark stitches, with a mini-map, pan/zoom, live per-color remaining counts, and a focus mode. The screen stays on while you stitch.
+- Sessions are timed; "total today" and per-color progress update as you go.
+
+## Stats & motivation (free)
+- Lifetime totals (survive deletes/reinstalls), daily history, current/longest streaks, and a finish-by estimate.
+- Optional celebrations for milestones, finished colors, personal bests, and a weekly recap.
+
+## Export & sell
+- Export print-ready PDFs (full-color and black-and-white) with a legend and a built-in beginner guide.
+- Save to a folder or zip (Drive/OneDrive/local), or share via the Android share sheet.
+- Optional one-time commercial unlock: brand exported PDFs with your name/logo, generate Etsy-style listing images, and a license to sell patterns you create. (Imported third-party charts can't be re-shared/exported.)
 
 ## Pricing
-- Free to install. A one-time purchase unlocks pattern creation, import, and export. No subscription.
+- Free to download. 30-day free trial of all features. After that, a one-time purchase unlocks create/import/export; viewing and tracking stay free. A separate one-time commercial unlock adds branding + selling. No subscription.
 
-## Privacy
-- Offline-first. The app collects no personal data and uploads nothing; everything stays on the device.
+## Privacy & platform
+- Android 8.0+; phones and tablets. No account, no sign-up.
+- Works offline; the only network use is Google Play (optional purchases and app updates), handled by Google.
+- Your images, patterns, and progress stay on your device. The app collects and uploads no personal data.
 
 ## Links
 - Home: https://flossworkscross-stitch.com/
