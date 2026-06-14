@@ -1,0 +1,30 @@
+# Flossworks – Stitch & Track
+
+> An offline-first Android app for cross-stitch. Turn your photos into stitchable
+> patterns with real DMC thread colors, import existing chart PDFs, organize your
+> projects, and track every stitch. Free to install; a one-time purchase unlocks
+> creation/import/export — no subscription. Made by Flossworks Cross-Stitch LLC.
+
+## What it does
+- Create cross-stitch patterns from your own photos and images using real DMC thread colors.
+- Import existing charts, including Pattern Keeper–style PDFs.
+- Organize all your projects in one place.
+- Track stitching progress: mark stitches, per-color counts, daily history, streaks, and finish estimates.
+- Export print-ready PDFs and a single-file ".flossworks" backup.
+- Works fully offline — no account, no sign-up; your data stays on your device.
+
+## Who it's for
+- Cross-stitch hobbyists on Android phones and tablets.
+- Pattern sellers (an optional commercial/branding tier brands exported PDFs and listing images).
+
+## Pricing
+- Free to install. A one-time purchase unlocks pattern creation, import, and export. No subscription.
+
+## Privacy
+- Offline-first. The app collects no personal data and uploads nothing; everything stays on the device.
+
+## Links
+- Home: https://flossworkscross-stitch.com/
+- Get it on Google Play: https://play.google.com/store/apps/details?id=com.caybin.crossstitchstudio
+- Privacy Policy: https://flossworkscross-stitch.com/privacy
+- Support: https://flossworkscross-stitch.com/support

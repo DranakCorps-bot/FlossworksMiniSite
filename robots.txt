@@ -1,4 +1,50 @@
+# Flossworks – Stitch & Track
+# We welcome search engines AND AI assistants to crawl, index, cite, and answer
+# questions using this site. Nothing here is restricted.
+#
+# NOTE: For this file to be served, Cloudflare's "Manage your robots.txt" must be
+# turned OFF — otherwise Cloudflare injects a managed block that disallows AI bots.
+
+# Content signals (content-signal convention):
+#   search   = appear in search indexes / results
+#   ai-input = be used for AI search answers / grounding  (the AI-visibility win)
+#   ai-train = be used to train AI models
 User-agent: *
+Content-Signal: search=yes,ai-input=yes,ai-train=yes
 Allow: /
+
+# Explicitly welcome the major AI crawlers (empty Disallow = allow everything).
+User-agent: GPTBot
+Disallow:
+
+User-agent: OAI-SearchBot
+Disallow:
+
+User-agent: ChatGPT-User
+Disallow:
+
+User-agent: ClaudeBot
+Disallow:
+
+User-agent: anthropic-ai
+Disallow:
+
+User-agent: Claude-Web
+Disallow:
+
+User-agent: PerplexityBot
+Disallow:
+
+User-agent: Google-Extended
+Disallow:
+
+User-agent: Applebot-Extended
+Disallow:
+
+User-agent: CCBot
+Disallow:
+
+User-agent: meta-externalagent
+Disallow:
 
 Sitemap: https://flossworkscross-stitch.com/sitemap.xml
