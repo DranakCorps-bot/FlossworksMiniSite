@@ -1,0 +1,3 @@
+# Canonicalize to the apex (non-www) host so there is a single indexable URL.
+# Matches only the www hostname, so the apex is unaffected (no loop). Keeps the path.
+https://www.flossworkscross-stitch.com/* https://flossworkscross-stitch.com/:splat 301
