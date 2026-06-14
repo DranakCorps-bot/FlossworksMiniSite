@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flossworks – Stitch &amp; Track | Cross-Stitch Pattern App</title>
-  <meta name="description" content="Flossworks – Stitch & Track is a cross-stitch app that helps you create, import, organize, and track cross-stitch patterns and projects.">
+  <meta name="description" content="Offline Android cross-stitch app: turn photos into patterns with DMC thread colors, import chart PDFs, organize projects, and track every stitch. One-time purchase, no subscription.">
   <link rel="canonical" href="https://flossworkscross-stitch.com/">
   <link rel="icon" href="/assets/favicon.png">
   <meta property="og:type" content="website">
@@ -15,7 +15,57 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/styles.css?v=6">
+  <meta property="og:site_name" content="Flossworks – Stitch &amp; Track">
+  <meta property="og:image:alt" content="Flossworks – Stitch &amp; Track">
+  <meta name="theme-color" content="#faf7f2">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://flossworkscross-stitch.com/#org",
+        "name": "Flossworks Cross-Stitch LLC",
+        "url": "https://flossworkscross-stitch.com/",
+        "logo": "https://flossworkscross-stitch.com/assets/favicon.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://flossworkscross-stitch.com/#website",
+        "url": "https://flossworkscross-stitch.com/",
+        "name": "Flossworks – Stitch & Track",
+        "publisher": { "@id": "https://flossworkscross-stitch.com/#org" }
+      },
+      {
+        "@type": "MobileApplication",
+        "name": "Flossworks – Stitch & Track",
+        "operatingSystem": "Android",
+        "applicationCategory": "LifestyleApplication",
+        "url": "https://flossworkscross-stitch.com/",
+        "downloadUrl": "https://play.google.com/store/apps/details?id=com.caybin.crossstitchstudio",
+        "installUrl": "https://play.google.com/store/apps/details?id=com.caybin.crossstitchstudio",
+        "description": "Create, import, organize, and track cross-stitch patterns and projects on Android — generate charts from photos with DMC thread colors and track every stitch. Works offline.",
+        "image": "https://flossworkscross-stitch.com/assets/marketing/og-image.jpg",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "publisher": { "@id": "https://flossworkscross-stitch.com/#org" }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Does Flossworks work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Flossworks runs entirely on your device — no internet connection is needed to use it." } },
+      { "@type": "Question", "name": "Do I need an account?", "acceptedAnswer": { "@type": "Answer", "text": "No. There's no sign-up or login — just open the app and start." } },
+      { "@type": "Question", "name": "Where is my data stored?", "acceptedAnswer": { "@type": "Answer", "text": "On your device. Your images, patterns, and progress stay with you and aren't uploaded anywhere." } },
+      { "@type": "Question", "name": "What can I make?", "acceptedAnswer": { "@type": "Answer", "text": "Turn your images into cross-stitch patterns using DMC thread colors, organize your projects, and track your stitching progress." } },
+      { "@type": "Question", "name": "Is there a subscription?", "acceptedAnswer": { "@type": "Answer", "text": "No. Flossworks is designed as a one-time purchase, not a subscription." } }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="/styles.css?v=7">
 </head>
 <body>
   <header class="site-header">
@@ -128,13 +178,19 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <div>&copy; 2026 Flossworks Cross-Stitch LLC</div>
-      <nav aria-label="Footer">
-        <a href="/">Home</a>
-        <a href="/privacy">Privacy</a>
-        <a href="/support">Support</a>
-        <a href="/terms">Terms</a>
-      </nav>
+      <a class="footer-badge" href="https://play.google.com/store/apps/details?id=com.caybin.crossstitchstudio"
+         target="_blank" rel="noopener" aria-label="Get Flossworks – Stitch &amp; Track on Google Play">
+        <img src="/assets/google-play-badge.png" width="646" height="250" alt="Get it on Google Play">
+      </a>
+      <div class="footer-row">
+        <div>&copy; 2026 Flossworks Cross-Stitch LLC</div>
+        <nav aria-label="Footer">
+          <a href="/">Home</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/support">Support</a>
+          <a href="/terms">Terms</a>
+        </nav>
+      </div>
     </div>
   </footer>
   <script src="/site.js?v=3" defer></script>

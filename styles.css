@@ -208,12 +208,21 @@ main.page li { margin: 4px 0; }
 .site-footer .wrap {
   padding: 28px 20px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   gap: 16px;
-  flex-wrap: wrap;
   font-size: 0.9rem;
   color: var(--muted);
 }
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.site-footer .footer-badge { display: inline-block; margin: 0; }
+.site-footer .footer-badge img { height: 46px; width: auto; display: block; }
 .site-footer a { color: var(--muted); text-decoration: none; margin-left: 16px; }
 .site-footer a:first-child { margin-left: 0; }
 .site-footer a:hover { color: var(--accent); }
